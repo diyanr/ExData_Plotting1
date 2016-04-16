@@ -8,5 +8,3 @@ powData <- subset(powCon, Date >= "2007-02-01" & Date <= "2007-02-02")
 png("plot1.png", width = 480, height = 480, units = "px")
 hist(powData$Global_active_power, col = "red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)")
 dev.off()
-
-plot(powData$Time, powData$Global_active_power, type = "l", xlab = "", ylab = "Global Active Power (kilowatts)")
